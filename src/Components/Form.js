@@ -64,26 +64,26 @@ const formValid = ({ formErrors, ...rest }) => {
         switch (name) {
           case "name":
             formErrors.name =
-              value.length < 3 ? "minimum 3 characters required" : "";
+              value.length < 3 ? "minimum of 3 characters is required" : "";
             break;
           case "breed":
             formErrors.breed =
-              value.length < 3 ? "minimum 3 characters required" : "";
+              value.length < 3 ? "minimum of 3 characters is required" : "";
             break;
           case "birthday":
             formErrors.birthday =
-            value.length < 3 ? "minimum 3 characters required" : "";
+            value.length < 3 ? "minimum of 3 characters is required" : "";
             break;
           case "gender":
             formErrors.gender =
-              value.length < 6 ? "minimum 6 characters required" : "";
+              value.length < 6 ? "minimum of 6 characters is required" : "";
             break;
           case "spayed or neutered":
               formErrors.spayedOrNeutered =
-              value.length < 3 ? "minimum 3 characters required" : "";
+              value.length < 3 ? "minimum of 3 characters is required" : "";
           case "weight":
               formErrors.weight =
-              value.length < 3 ? "minimum 3 characters required" : "";    
+              value.length < 3 ? "minimum of 3 characters is required" : "";    
           default:
             break;
         }
