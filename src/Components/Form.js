@@ -105,7 +105,7 @@ const formValid = ({ formErrors, ...rest }) => {
         return (
           <div className="wrapper">
             <div className="form-wrapper">
-              <h1>Create Account</h1>
+              <h1>Yay, we love dogs! Give us the basics about your pup. </h1>
               <form onSubmit={this.handleSubmit} >
                 <div className="name">
                   <label htmlFor="name">Pet's name</label>
