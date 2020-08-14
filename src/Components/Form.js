@@ -172,8 +172,8 @@ const formValid = ({ formErrors, ...rest }) => {
                     name="spayedorneuetered"
                     onChange={this.handleChange}
                   />
-                  {formErrors.birthday.length > 0 && (
-                    <span className="errorMessage">{formErrors.birthday}</span>
+                  {formErrors.spayedOrNeutered.length > 0 && (
+                    <span className="errorMessage">{formErrors.spayedOrNeutered}</span>
                   )}
                 </div>
                 <div className="weight">
