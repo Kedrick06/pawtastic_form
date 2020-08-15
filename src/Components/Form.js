@@ -186,6 +186,9 @@ const formValid = ({ formErrors, ...rest }) => {
                         <span className="errorMessage">{formErrors.weight}</span>
                     )}
                 </div>
+                <div className ="back">
+                    <button type="Back">Back</button>
+                </div>
                 <div className="next">
                   <button type="Next">Next</button>
                 </div>
