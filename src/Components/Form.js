@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import axios from 'axios';
+import {storage} from './Firebase';
 
 const formValid = ({ formErrors, ...rest }) => {
     let valid = true;
@@ -95,9 +97,14 @@ const formValid = ({ formErrors, ...rest }) => {
           selectedFile: event.target.files[0]
       }
       fileSelectedHandler = event => {
-          this.setState
+          this.setState({
+              selectedFile: event.target.files[0]
+          })
       }
-      fileUploadHandler = () => {}
+      fileUploadHandler = () => {
+        const form = new FormData();
+        form.append('image', this.state.selectedFile, this.state.selectedFile.name)
+      }
     
       render() {
         const { formErrors } = this.state;
@@ -190,7 +197,7 @@ const formValid = ({ formErrors, ...rest }) => {
                     )}
                 </div>
                 <div className="next">
-                  <button type="Next">Create Account</button>
+                  <button type="Next">Next</button>
                 </div>
               </form>
             </div>
