@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import axios from 'axios';
-import {storage} from './Firebase';
+
+
+
+
 
 const formValid = ({ formErrors, ...rest }) => {
     let valid = true;
@@ -93,18 +95,6 @@ const formValid = ({ formErrors, ...rest }) => {
         this.setState({ formErrors, [name]: value }, () => console.log(this.state));
       };
 
-      state = {
-          selectedFile: event.target.files[0]
-      }
-      fileSelectedHandler = event => {
-          this.setState({
-              selectedFile: event.target.files[0]
-          })
-      }
-      fileUploadHandler = () => {
-        const form = new FormData();
-        form.append('image', this.state.selectedFile, this.state.selectedFile.name)
-      }
     
       render() {
         const { formErrors } = this.state;
@@ -123,8 +113,8 @@ const formValid = ({ formErrors, ...rest }) => {
                     name="name"
                     onChange={this.handleChange}
                   />
-                  {formErrors.firstName.length > 0 && (
-                    <span className="errorMessage">{formErrors.firstName}</span>
+                  {formErrors.name.length > 0 && (
+                    <span className="errorMessage">{formErrors.name}</span>
                   )}
                 </div>
                 <div className="upload">
