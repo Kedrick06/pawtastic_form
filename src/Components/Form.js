@@ -191,6 +191,7 @@ const formValid = ({ formErrors, ...rest }) => {
                 </div>
                 <div className="next">
                   <button type="Next">Next</button>
+                
                 </div>
               </form>
             </div>
