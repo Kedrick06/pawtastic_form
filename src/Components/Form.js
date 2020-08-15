@@ -117,10 +117,12 @@ const formValid = ({ formErrors, ...rest }) => {
                     <span className="errorMessage">{formErrors.name}</span>
                   )}
                 </div>
+
                 <div className="upload">
                     <input type="file" onChange={this.fileSelectedHandler}/>
                     <button onClick={this.fileUploadHandler}>Upload Image</button>
                 </div>
+
                 <div className="breed">
                   <label htmlFor="breed">Pet's Breed</label>
                   <input
@@ -144,7 +146,6 @@ const formValid = ({ formErrors, ...rest }) => {
                     name="birthday"
                     onChange={this.handleChange}
                   />
-                  
                   {formErrors.birthday.length > 0 && (
                     <span className="errorMessage">{formErrors.birthday}</span>
                   )}
