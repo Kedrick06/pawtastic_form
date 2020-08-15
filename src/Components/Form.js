@@ -160,6 +160,7 @@ const formValid = ({ formErrors, ...rest }) => {
                     <span className="errorMessage">{formErrors.gender}</span>
                   )}
                 </div>
+
                 <div className="spayedorneutered">
                   <label htmlFor="spayedorneutered">Spayed or Neutered?</label>
                   <input
@@ -169,11 +170,13 @@ const formValid = ({ formErrors, ...rest }) => {
                     name="spayedorneuetered"
                     onChange={this.handleChange}
                   />
+
                   {formErrors.spayedOrNeutered.length > 0 && (
                     <span className="errorMessage">{formErrors.spayedOrNeutered}</span>
                   )}
+                  
                 </div>
-                
+
                 <div className="weight">
                     <label htmlFor="weight">Weight</label>
                     <input
