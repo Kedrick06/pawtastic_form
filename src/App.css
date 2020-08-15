@@ -71,6 +71,15 @@ input.error {
 .breed {
   margin-left: 1%;
 }
+.birthday{
+  margin-left: 1%
+}
+.gender{
+  margin-left: 1%
+}
+.spayedorneutered{
+  margin-left: 1%
+}
 
 .name,
 .breed,
@@ -116,7 +125,7 @@ input.error {
 
 .next button:hover {
   color: lightsalmon;
-  background-color: #fff;
+  background-color:darkcyan;
   border: 2px solid #519e8a;
 }
 

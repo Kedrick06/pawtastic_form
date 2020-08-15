@@ -164,7 +164,7 @@ const formValid = ({ formErrors, ...rest }) => {
                   <label htmlFor="spayedorneutered">Spayed or Neutered?</label>
                   <input
                     className={formErrors.spayedOrNeutered.length > 0 ? "error" : null}
-                    placeholder="Spayed or Neutered? Please Enter 'Yes' or 'No'."
+                    placeholder="Please Enter 'Yes' or 'No'."
                     type="spayedorneutered"
                     name="spayedorneuetered"
                     onChange={this.handleChange}
