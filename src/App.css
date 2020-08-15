@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #258ea6;
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg') ;
+  
 }
 
 .form-wrapper {
