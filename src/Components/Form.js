@@ -173,6 +173,7 @@ const formValid = ({ formErrors, ...rest }) => {
                     <span className="errorMessage">{formErrors.spayedOrNeutered}</span>
                   )}
                 </div>
+                
                 <div className="weight">
                     <label htmlFor="weight">Weight</label>
                     <input
@@ -191,7 +192,7 @@ const formValid = ({ formErrors, ...rest }) => {
                 <div className ="back">
                     <button type="Back">Back</button>
                 </div>
-                
+
                 <div className="next">
                   <button type="Next">Next</button>
                 
