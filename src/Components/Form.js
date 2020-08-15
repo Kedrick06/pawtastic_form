@@ -182,9 +182,11 @@ const formValid = ({ formErrors, ...rest }) => {
                     name="weight"
                     onChange={this.handChange}
                     />
+
                     {formErrors.weight.length > 0 && (
                         <span className="errorMessage">{formErrors.weight}</span>
                     )}
+                    
                 </div>
                 <div className ="back">
                     <button type="Back">Back</button>
