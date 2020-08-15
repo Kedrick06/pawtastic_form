@@ -127,11 +127,12 @@ input.error {
 .next button:hover {
   color: lightsalmon;
   background-color:darkcyan;
-  
+
   border: 2px solid #519e8a;
 }
 
 .next small {
   color: #999;
   font-weight: lighter;
+  
 }
