@@ -124,17 +124,31 @@ input.error {
   margin-bottom: 0.25em;
 
 }
+.back button{
+  background-color: lightblue;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
 
-.next,
+.next button:hover {
+  color: lightsalmon;
+  background-color:darkcyan;
+  border: 2px solid #519e8a;
+}
 .back button:hover {
   color: lightsalmon;
   background-color:darkcyan;
-
   border: 2px solid #519e8a;
 }
 
-.next, 
-.back small {
+.next small {
   color: #999;
   font-weight: lighter;
 
