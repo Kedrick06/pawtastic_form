@@ -134,6 +134,7 @@ const formValid = ({ formErrors, ...rest }) => {
                     <span className="errorMessage">{formErrors.breed}</span>
                   )}
                 </div>
+
                 <div className="birthday">
                   <label htmlFor="birthday">Birthday</label>
                   <input
@@ -143,10 +144,12 @@ const formValid = ({ formErrors, ...rest }) => {
                     name="birthday"
                     onChange={this.handleChange}
                   />
+                  
                   {formErrors.birthday.length > 0 && (
                     <span className="errorMessage">{formErrors.birthday}</span>
                   )}
                 </div>
+
                 <div className="gender">
                   <label htmlFor="gender">Gender</label>
                   <input
@@ -174,7 +177,7 @@ const formValid = ({ formErrors, ...rest }) => {
                   {formErrors.spayedOrNeutered.length > 0 && (
                     <span className="errorMessage">{formErrors.spayedOrNeutered}</span>
                   )}
-                  
+
                 </div>
 
                 <div className="weight">
